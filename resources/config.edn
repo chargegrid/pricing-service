@@ -1,0 +1,10 @@
+{:database {:host     "postgres"
+            :user     "prservice"
+            :password "prservice"
+            :db       "prservice"
+            :port     5432}
+ :amqp     {:url                      "amqp://guest:guest@rmq:5672"
+            :sessions-evse-queue-name "sessions.with-evse.pricing-service"
+            :sessions-exchange        "sessions"
+            :transactions-routing-key "transactions"}
+ :port     8081}
